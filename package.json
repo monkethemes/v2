@@ -4,7 +4,11 @@
     "description": "A project for sharing and finding monkeytype themes.",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "dev": "npm install && npm run frontend:install && sudo docker-compose up --build",
+        "prod": "npm install && npm run frontend:install && npm run frontend:build && sudo docker-compose up --build",
+        "frontend:install": "npm install --prefix ./frontend",
+        "frontend:build": "npm run build --prefix ./frontend"
     },
     "author": "KennLDN",
     "license": "MIT",
