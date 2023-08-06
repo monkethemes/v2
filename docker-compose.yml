@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    image: node:16.20.1-alpine
+    container_name: monkethemes_server
+    working_dir: /app
+    command: node server.js
+    environment:
+      PORT: ${PORT}
+      ENV: ${ENV}
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+      - meilisearch
+
+  mongo:
+    image: mongo:latest
+    container_name: monkethemes_mongo
+    volumes:
+      - ./db-data:/data/db
+
+  meilisearch:
+    image: getmeili/meilisearch:latest
+    container_name: monkethemes_meili
+    volumes:
+      - ./ms-data:/meili_data

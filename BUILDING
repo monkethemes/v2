@@ -1,0 +1,2 @@
+update .env.example to .env
+npm install && docker-compose up --build
