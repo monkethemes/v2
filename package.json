@@ -4,12 +4,11 @@
     "description": "A project for sharing and finding monkeytype themes.",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+        "start": "node server.js"
     },
     "author": "KennLDN",
     "license": "MIT",
     "dependencies": {
-      "express": "^4.17.1"
+        "express": "^4.18.2"
     }
-  }
-  
+}

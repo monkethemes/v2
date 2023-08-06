@@ -1,2 +1,11 @@
-update .env.example to .env
-npm install && docker-compose up --build
+Node v16.20.1
+
+DEVELOPMENT
+update .env.example to .env, change ENV to dev
+change .env.development in ./frontend to correct port (if changed)
+npm install && npm install --prefix frontend && npm install --prefix backend && docker-compose up --build
+
+PRODUCTION
+update .env.example to .env, change ENV to prod
+change .env.production in ./frontend to your URL (reverse proxy will be needed)
+npm install && cd frontend && npm install && npm run build && cd .. && npm install --prefix backend && docker-compose up --build
