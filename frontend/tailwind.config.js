@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     colors: {
       'bg': '#323437',
@@ -19,13 +19,18 @@ module.exports = {
       base: '1rem',
       xl: '1.25rem',
       'title': '2rem',
+      'filter': '1em',
     },
     extend: {
       borderRadius: {
         'st': '2rem',
       },
       spacing: {
+        'xt': '550px',
         'st': '1250px',
+      },
+      screens: {
+        'md': '550px'
       }
     }
   }
