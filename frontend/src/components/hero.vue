@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center w-full p-4 bg-alt rounded-lg">
+  <div class="relative flex items-center w-full p-4 bg-alt rounded-lg z-50">
     <font-awesome-icon :icon="icon" size="2xl" class="px-5 text-sub mt-0.5" />
     <div class="flex flex-col justify-center">
       <h2 class="text-2xl text-text">{{ title }}</h2>

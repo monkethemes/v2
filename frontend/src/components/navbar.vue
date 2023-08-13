@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between h-12 w-full relative">
+    <nav class="flex items-center justify-between h-12 w-full relative z-50">
         <div class="flex items-center">
             <router-link to="/"><logo class="fill-main pt-1 pl-2 mr-2 w-8 relative z-10" /></router-link>
             <div class="overflow-hidden relative">

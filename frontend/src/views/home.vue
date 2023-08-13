@@ -1,5 +1,5 @@
 <template>
-  <main class="flex justify-center h-screen">
+  <main class="justify-center h-screen">
     <filterbar />
   </main>
 </template>

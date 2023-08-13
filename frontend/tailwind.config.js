@@ -19,7 +19,6 @@ module.exports = {
       base: '1rem',
       xl: '1.25rem',
       'title': '2rem',
-      'filter': '1em',
     },
     extend: {
       borderRadius: {
@@ -27,10 +26,27 @@ module.exports = {
       },
       spacing: {
         'xt': '550px',
+        'ft': '850px',
         'st': '1250px',
       },
       screens: {
-        'md': '550px'
+        'md': '550px',
+        'ft': '914px',
+      },
+      zIndex: {
+        'n1': '-1',
+        'n2': '-2',
+        'n3': '-3',
+        'n4': '-4'
+      },
+      keyframes: {
+        fadein: {
+          '0%': { opacity: '0' },
+          '10%': { opacity: '100%' },
+        }
+      },
+      animation: {
+        'fade-in': 'fadein 2s linear',
       }
     }
   }
