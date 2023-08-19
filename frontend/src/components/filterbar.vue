@@ -2,10 +2,10 @@
     <div class="flex flex-col-reverse ft:flex-row items-center bg-alt rounded-lg w-full m-auto max-w-[400px] ft:max-w-[1000px] p-3 gap-6">
         <div class="flex w-full gap-4 ft:w-3/12">
             <font-awesome-icon icon="moon" size="xs" class="text-sub" />
-            <vue-slider class="flex-grow -mt-1.5" v-model="store.brightness" :min="0" :max="100" :enable-cross="false" />
+            <vue-slider class="flex-grow -mt-1.5 z-50" v-model="store.brightness" :min="0" :max="100" :enable-cross="false" />
             <font-awesome-icon icon="sun" size="xs" class="text-sub" />
         </div>
-        <div class="flex w-full ft:w-2/6">
+        <div class="flex w-full ft:w-2/6 select-none">
             <div class="hidden ft:block relative w-0"><div class="absolute w-1 h-5 bg-bg"></div></div>
             <div class="flex w-1/2 justify-evenly">
                 <toggle id="bg" v-model="store.bgChecked">
@@ -41,7 +41,7 @@
                 <transition>
                     <div v-if="dropdownVisible" ref="dropdownMenu" class="absolute top-full w-[calc(100%+18px)] bg-alt rounded-lg text-xs text-sub pt-3 -ml-1.5 z-10">
                         <div v-for="option in options" :key="option" @click="selectOption(option)" 
-                            :class="[option === store.selectedOption ? 'bg-main text-alt' : '', 'hover:bg-text hover:text-alt p-2']">
+                            :class="[option === store.selectedOption ? 'select-none cursor-pointer bg-main text-alt' : '', 'select-none cursor-pointer hover:bg-text hover:text-alt p-2']">
                             {{ option }}
                         </div>
                     </div>
