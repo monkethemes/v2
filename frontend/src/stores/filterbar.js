@@ -9,7 +9,7 @@ export const useFilterBarStore = defineStore({
         nobgChecked: true,
         likesOnly: false,
         searchText: '',
-        selectedOption: "top this week"
+        selectedOption: "relevant"
     }),
 
     actions: {
@@ -22,7 +22,7 @@ export const useFilterBarStore = defineStore({
             this.nobgChecked = true
             this.likesOnly = false
             this.searchText = ''
-            this.selectedOption = "top this week"
+            this.selectedOption = "relevant"
         }
     }
 })

@@ -1,7 +1,5 @@
 <template>
-  <main class="justify-center h-screen">
     <filterbar />
-  </main>
 </template>
 
 <script setup>
