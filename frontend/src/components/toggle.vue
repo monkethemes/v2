@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="relative">
         <input 
             :type="isRadio ? 'radio' : 'checkbox'"
             :id="id"
