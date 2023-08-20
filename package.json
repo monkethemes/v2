@@ -4,6 +4,7 @@
     "description": "A project for sharing and finding monkeytype themes.",
     "main": "server.js",
     "scripts": {
+        "pretty": "prettier --write *.{vue,js,html,css} 'frontend/**/*.{vue,js,html,css}' 'backend/**/*.{vue,js,html,css}' '!frontend/dist/**'",
         "start": "node server.js",
         "dev": "npm install && npm run frontend:install && sudo docker-compose up --build -d",
         "prod": "npm install && npm run frontend:install && npm run frontend:build && sudo docker-compose up --build -d",
@@ -14,5 +15,8 @@
     "license": "MIT",
     "dependencies": {
         "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "prettier": "^3.0.2"
     }
 }
