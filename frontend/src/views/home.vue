@@ -1,6 +1,6 @@
 <template>
-	<filterbar />
-	<themelist />
+   <filterbar />
+   <themelist />
 </template>
 
 <script setup>
