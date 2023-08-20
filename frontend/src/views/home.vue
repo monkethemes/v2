@@ -1,9 +1,9 @@
 <template>
-    <hero />
     <filterbar />
+    <themelist />
 </template>
 
 <script setup>
 import filterbar from '@/components/filterbar.vue';
-import hero from '@/components/hero.vue'
+import themelist from '@/components/themelist.vue';
 </script>

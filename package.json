@@ -5,8 +5,8 @@
     "main": "server.js",
     "scripts": {
         "start": "node server.js",
-        "dev": "npm install && npm run frontend:install && sudo docker-compose up --build",
-        "prod": "npm install && npm run frontend:install && npm run frontend:build && sudo docker-compose up --build",
+        "dev": "npm install && npm run frontend:install && sudo docker-compose up --build -d",
+        "prod": "npm install && npm run frontend:install && npm run frontend:build && sudo docker-compose up --build -d",
         "frontend:install": "npm install --prefix ./frontend",
         "frontend:build": "npm run build --prefix ./frontend"
     },

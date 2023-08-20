@@ -33,8 +33,9 @@ module.exports = {
         'st': '1250px',
       },
       screens: {
-        'md': '550px',
+        'xt': '550px',
         'ft': '914px',
+        'st': '1250px',
       },
       zIndex: {
         'n1': '-1',

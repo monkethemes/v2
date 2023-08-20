@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <router-link to="/" class="p-1 block absolute top-1/2 transform -translate-y-1/2 right-4 transition duration-200 text-sub hover:text-text active:text-sub">
+        <router-link to="/" class="p-1 block absolute top-1/2 transform -translate-y-1/2 right-2 transition duration-200 text-sub hover:text-text active:text-sub">
             <font-awesome-icon icon="user" />
         </router-link>
     </nav>

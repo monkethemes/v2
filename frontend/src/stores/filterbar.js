@@ -5,8 +5,8 @@ export const useFilterBarStore = defineStore({
 
     state: () => ({
         brightness: [0, 100],
-        bgChecked: true,
-        nobgChecked: true,
+        bg: true,
+        nobg: true,
         likesOnly: false,
         searchText: '',
         selectedOption: "relevant"
@@ -18,8 +18,7 @@ export const useFilterBarStore = defineStore({
         },
         resetToDefaults() {
             this.brightness = [0, 100]
-            this.bgChecked = true
-            this.nobgChecked = true
+            this.background = ["with", "without"]
             this.likesOnly = false
             this.searchText = ''
             this.selectedOption = "relevant"
